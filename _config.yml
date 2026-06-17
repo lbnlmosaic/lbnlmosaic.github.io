@@ -5,11 +5,12 @@
 
 title: MoSAIC-P38
 description: >-
-  MoSAIC-P38 — a computer architecture system from the LBNL
+  The Modular System for Acceleration Integration (MoSAIC) is a multi-tiled architecture for accurate and fast exploration of message driven computation from the LBNL
   Computer Architecture Group (AMCR).
 theme: jekyll-theme-yat
 baseurl: ""   # set to "/repo-name" if hosting under a GitHub Pages project path
-url: ""
+url: "https://lbnlmosaic.github.io"
+favicon: "assets/favicon/favicon.ico"
 
 # Brand palette (reference only — the authoritative copy used for styling lives
 # in _sass/custom/_lbnl.scss as CSS variables). Kept here for documentation.
