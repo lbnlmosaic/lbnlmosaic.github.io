@@ -1,6 +1,6 @@
 {
-  "name": "LBNL MoSAIC",
-  "short_name": "MoSAIC",
+  "name": "Your Project",
+  "short_name": "Project",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

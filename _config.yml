@@ -1,57 +1,62 @@
-# =============================================================================
-#  Jekyll site configuration — MoSAIC-P38
-#  NOTE: Restart `jekyll serve` after editing this file; it is not hot-reloaded.
-# =============================================================================
-
 title: MoSAIC-P38
-description: >-
-  The Modular System for Acceleration Integration (MoSAIC) is a multi-tiled architecture for accurate and fast exploration of message driven computation from the LBNL
-  Computer Architecture Group (AMCR).
-theme: jekyll-theme-yat
-baseurl: ""   # set to "/repo-name" if hosting under a GitHub Pages project path
-url: "https://lbnlmosaic.github.io"
-favicon: "assets/favicon/favicon.ico"
+description: A multi-tiled architecture for accurate and fast message-driven computing exploration.
+theme: just-the-docs
 
-# Brand palette (reference only — the authoritative copy used for styling lives
-# in _sass/custom/_lbnl.scss as CSS variables). Kept here for documentation.
-color_palette:
-  dark_blue:  "#00313C"
-  teal:       "#007681"
-  light_gray: "#B1B3B3"
-  dark_gray:  "#63666A"
+baseurl: ""
+url: "https://lkallem.github.io/lbnlmosaic" # Your GitHub Pages URL
 
-# Pages listed in the top navigation bar, in order. Each entry is a source file
-# whose front-matter `title` becomes the menu label. Rendered by the theme's
-# views/header.html. (Partner logos live in the footer; see _data/sponsors.yaml.)
-header_pages:
-  - index.md
-  - documentation.md
-  - tutorials.md
-  - test-cases.md
-  - about.md
+# color_scheme: lbnl-dark   # LBNL Dark mode theme
+color_scheme: lbnl-light    # LBNL Light mode theme
 
-# Copyright / legal notice rendered in the site footer (see
-# _includes/views/footer.html). Markdown is supported.
-copyright_notice: |
-  P38 heterogeneous multi-tiled system with support for message queues (MoSAIC) Copyright (c) 2024, The Regents of the University of California, through Lawrence Berkeley National Laboratory (subject to receipt of any required approvals from the U.S. Dept. of Energy). All rights reserved.
+logo: "assets/logos/mosaiclogo.png"
+favicon_ico: "/assets/favicon/mosaiclogo.png"
 
-  If you have questions about your rights to use or distribute this software, please contact Berkeley Lab's Intellectual Property Office at IPO@lbl.gov.
+search_enabled: true
+heading_anchors: true
+enable_copy_code_button: true
 
-  NOTICE. This Software was developed under funding from the U.S. Department of Energy and the U.S. Government consequently retains certain rights. As such, the U.S. Government has been granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable, worldwide license in the Software to reproduce, distribute copies to the public, prepare derivative works, and perform publicly and display publicly, and to permit others to do so.
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%Y %b %e at %H:%M %z" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
-# yat theme settings
-yat:
-  date_format: "%b %-d, %Y"
+# Links to appear at the top banner
+aux_links:
+  "Official CAG Site": https://amcr.lbl.gov/departments/computer-science-department/cag/
+  "AMCR": https://amcr.lbl.gov/
+  "LBNL": https://www.lbl.gov/
+  "MoSAIC on GitHub": https://github.com/lbnlcomputerarch/MoSAIC-P38
+aux_links_new_tab: true
+
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
 
 plugins:
-  - jekyll-feed       # RSS/Atom feed
-  - jekyll-seo-tag    # <meta> SEO tags (consumed by {% seo %} in head.html)
-  - jekyll-paginate   # pagination support
+  - jekyll-email-protect
 
-# Files kept out of the built _site output.
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "11.16.0"
+
 exclude:
-  - AGENTS.md
+  - README.md
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - bxewebsite/   # local-only reference copy of the BXE site; not part of this build
+  - node_modules
+  - .gitignore
+  - vendor/
+  - node_modules/
+  - templates/
