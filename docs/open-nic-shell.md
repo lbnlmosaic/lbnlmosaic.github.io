@@ -62,16 +62,8 @@ update_compile_order -fileset sources_1
 
 ### Option 2: GUI
 
-#### Adding axis_register_slice
+Work in Progress
 
-
-#### Setting the IP
-Open the IP catalog. Right click and Add Repository `mosaic_IP`.
-
-
-
-## Advanced Usage
-Tips and tricks for advanced shell operations.
 
 <div style="display: flex; justify-content: space-between;">
   <a href="{{ '/docs/boards' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-left-long"></i> Go back</a>

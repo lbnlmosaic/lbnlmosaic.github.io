@@ -6,7 +6,6 @@ nav_order: 2
 ---
 # C Functions
 
-This page documents the C-level API that PicoRV32 firmware uses to talk to the NoC and other tiles, deduced directly from the header files (`mq.h`, `xcustom.h`, `wrapper_mq.h`, `remote_wr.h`) and worked examples in `tools/picorv_c/`. It also explains which HDL signals to watch when confirming packet delivery in a Vivado (or Icarus) waveform.
 
 ## Overview: Three Hardware Interfaces
 

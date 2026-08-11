@@ -5,9 +5,7 @@ parent: Info
 nav_order: 3
 has_children: true
 ---
-# Existing Accelerators
-
-A guide to the accelerator tiles and example testcases currently in the `MoSAIC-P38` repository (`src/Tile.HDL/`), based on a review of their HDL source.
+# Existing Accelerators - WORK IN PROGRESS
 
 ## Accelerator Tiles
 
@@ -29,7 +27,7 @@ A few pages in this section document **testcases** rather than standalone accele
 | [SCF](existing-accelerators/scf) | Combined FFT + TSQR pipeline across a 3x3 mesh |
 | [Sweep](existing-accelerators/sweep) | FP adder tile inside a larger 8x8 mesh |
 | [Demo](existing-accelerators/demo) | Software-only asynchronous triangular solver using the cache tile |
-| [SNE](existing-accelerators/sne) | Placeholder — no corresponding hardware/software found in the repository |
+| [SNE](existing-accelerators/sne) | |
 
 See the sub-pages for detailed specifications, NoC protocol details, and worked software examples for each.
 

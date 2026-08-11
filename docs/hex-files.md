@@ -6,8 +6,6 @@ nav_order: 1
 ---
 # Hex Files
 
-Hex files are what actually gets loaded into a Pico (RISC-V) tile's instruction/data memory for simulation. Every entry in a testcase's `@pico_program` array is a hex file path, and `mosaic_2x2.pl`'s comment "Hex files can be generated and they will follow instructions written with C code" is exactly the process this page documents.
-
 ## How Hex File Generation Works
 
 Hex file generation is a two-stage pipeline, driven from your testcase `.pl` script by calling `gen_code()` (imported from a `gen_hex.pm` module) once per accelerator/firmware directory:
