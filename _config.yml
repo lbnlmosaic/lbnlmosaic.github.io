@@ -1,6 +1,6 @@
 title: MoSAIC-P38
 description: A multi-tiled architecture for accurate and fast message-driven computing exploration.
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 
 baseurl: ""
 url: "https://lbnlmosaic.github.io" # Your GitHub Pages URL
@@ -45,7 +45,6 @@ callouts:
 
 plugins:
   - jekyll-email-protect
-  - jekyll-remote-theme
 
 mermaid:
   # Version of mermaid library
