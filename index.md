@@ -14,12 +14,11 @@ permalink: /
 
 [<i class="fa-brands fa-github"></i> Github]({{ 'https://github.com/lbnlcomputerarch/MoSAIC-P38' }}){:target="_blank" .btn .btn-purple .mr-2}
 [<i class="fa-brands fa-readme"></i> Documentation]({{ '/docs' | relative_url }}){: .btn .btn-blue .mr-2}
-[<i class="fa-solid fa-chalkboard"></i> Learn More]({{ '/Research' | relative_url }}){: .btn .btn-primary .mr-2}
+[<i class="fa-solid fa-chalkboard"></i> Learn More]({{ '/research' | relative_url }}){: .btn .btn-primary .mr-2}
 
 <div style="display: flex; justify-content: center;">
   <img src="{{ 'assets/images/Processors talking.png' | relative_url }}" alt="Processors talking" style="max-height: 400px">
 </div>
-
 
 ### About This Project
 
@@ -30,7 +29,6 @@ permalink: /
 - Each tile has a hardware message queue for inter-tile communication used for message-driven computation.
 - A RISCV ISA extension enables straight access to the physical message queue or remote memory through C/C++ primitives (qPut, qGet, qWait, qPoll, mPut, mGet).
 - Partitioned global address scheme (PGAS). 
-
 
 <div class="card-grid">
   <a href="https://lbnlcomputerarch.github.io/docs/" class="site-card" target="_blank">🗂️<div class="card-title">Access our Resources</div><p> Guides on connecting to our servers via SSH, using a remote graphical desktop via VNC or XRDP, and others.</p></a>
