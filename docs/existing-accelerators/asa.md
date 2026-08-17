@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Asa
+title: ASA
 parent: Existing Accelerators
 nav_order: 1
 ---
@@ -13,6 +13,7 @@ The ASA tile (`src/Tile.HDL/asa_tile/`) integrates a key/data associative accele
 Because the core itself isn't present, this page documents what is verifiable directly from the source: the tile structure, the NoC packet protocol used to talk to ASA, and the opcodes the decoder recognizes. It does not speculate about what ASA computes internally.
 
 Source files:
+
 - `src/Tile.HDL/asa_tile/Tile_asa.sv`
 - `src/Tile.HDL/asa_tile/acc_asa.sv`
 - `src/Tile.HDL/asa_tile/asa_noc_dec.sv`
@@ -44,6 +45,7 @@ graph LR
   5. `noc_buffer_out` crosses the outbound stream back to `clk_line`.
 
 Two items are explicitly flagged in the source as questionable and worth knowing about if you're bringing this tile up on hardware:
+
 - `acc_asa.sv`: `assign stream_in_TREADY_int = req_rdy;  // Kylie says is a bug` — NoC readiness is tied directly to the ASA core's request-ready signal rather than being decoupled/registered.
 - `asa_noc_dec.sv`: the reset value for `req_msg.inst` (`ASA_IADD`) is marked `// TODO: not sure what to initialize it to ... ASK: confirm with Patricia`.
 
