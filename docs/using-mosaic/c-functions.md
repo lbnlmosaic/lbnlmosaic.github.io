@@ -1,8 +1,8 @@
 ---
 layout: page
 title: C Functions
-parent: Info
-nav_order: 2
+parent: Using MoSAIC
+nav_order: 4
 ---
 # C Functions
 
@@ -203,6 +203,6 @@ Using `tools/picorv_c/c_long_pkt/long_pkt.c`'s `pkt_sz_code = 3` case (`qPutH(9,
 If the beat count doesn't match, check `pkt_size_qput` in `qISAExtension_pcpi.sv` — a mismatch there (e.g. `pktSizeCode` set wrong, or a `qPutD` call missing/extra) is the most common cause of a truncated or hung transfer.
 
 <div style="display: flex; justify-content: space-between;">
-  <a href="{{ '/docs/hex-files' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-left-long"></i> Go back</a>
-  <a href="{{ '/docs/existing-accelerators' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-right-long"></i> Continue</a>
+  <a href="{{ '/docs/using-mosaic/hex-files' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-left-long"></i> Go back</a>
+  <a href="{{ '/docs/using-mosaic/adding-accelerators' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-right-long"></i> Continue</a>
 </div>

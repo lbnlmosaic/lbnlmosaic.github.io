@@ -2,7 +2,7 @@
 layout: page
 title: Adding New Accelerators
 parent: Using MoSAIC
-nav_order: 3
+nav_order: 5
 ---
 # Adding New Accelerators
 
@@ -125,6 +125,7 @@ General long header (64 bits):
   <img src="{{ '/assets/images/mget-dma-long-packet.png' | relative_url }}" alt="mGet and DMA long packet" style="max-height: 250px">
 </div>
 
+<br/>
 <div style="display: flex; justify-content: space-between;">
   <a href="{{ '/docs/tutorial' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-left-long"></i> Go back</a>
   <a href="{{ '/docs/info' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-right-long"></i> Continue</a>

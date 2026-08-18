@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Hex Files
-parent: Info
-nav_order: 1
+parent: Using MoSAIC
+nav_order: 3
 ---
 # Hex Files
 
@@ -20,10 +20,12 @@ graph LR
 ```
 
 1. **Compile** — `gen_code()` (in each firmware directory's `gen_hex.pm`) calls the Makefile in that directory (borrowed/adapted from the [picorv32](https://github.com/YosysHQ/picorv32) project) once **per pico tile** in your `@tile_array`:
-   ```
+
+   ```bash
    make clean
    make SRC_FNAME=<c_code>
    ```
+
    The Makefile compiles `<c_code>.c` with the RISC-V GCC toolchain (`riscv32-unknown-elf-gcc`), links it against `start.S`/`riscv.ld` (a minimal baremetal bootloader), and uses `objcopy -O verilog` to produce a byte-addressed ("hex8") Verilog memory image. `hex8tohex32.py` then repacks that into a word-addressed ("hex32") `<c_code>32.hex` file — the actual format `$readmemh` expects in the tile's instruction/data memories.
 
 2. **Per-tile memory layout** — before compiling, `gen_code()` regenerates two files unique to each tile ID:
@@ -46,6 +48,7 @@ To have a testcase compile and load your own C program, add a `gen_code()` block
 1. **Create your C directory.** Copy an existing firmware directory (e.g. `tools/picorv_c/c_asa/`) to a new one, keeping its `Makefile`, `start.S`, `riscv.ld`, `gen_hex.pm`, and `mq.h`/`xcustom.h` (needed if you use `qPut`/`mPut`/etc.). Put your own `<my_program>.c` in there.
 
 2. **Point your testcase at it**, near the top of the script:
+
    ```perl
    use lib "$ENV{PWD}";
    use lib "$ENV{PWD}/../picorv_c/c_myprogram";   # <- your new directory
@@ -55,6 +58,7 @@ To have a testcase compile and load your own C program, add a `gen_code()` block
    ```
 
 3. **Set the firmware path and C file name**, and generate the hex files before calling `gen_all()`:
+
    ```perl
    $path    = "$ENV{PWD}";
    $fw_path = "$path/../picorv_c/c_myprogram";
@@ -75,6 +79,7 @@ To have a testcase compile and load your own C program, add a `gen_code()` block
    ```
 
 4. **Reference the generated hex files in `@pico_program`.** `gen_code()` names its output `<c_code>32_<tile_id>.hex` before the final rename to `<c_code>_<tile_id>.hex` — check the exact filename it prints during generation, then list one entry per tile position (empty string `''` for non-`pico` tiles):
+
    ```perl
    @pico_program = ("${c_file}32_0.hex", '',
                      '', '');
@@ -86,6 +91,6 @@ To have a testcase compile and load your own C program, add a `gen_code()` block
 `gen_code()` requires `%param_h{'c_code'}` at minimum; it defaults `r`/`c` to a 4x4 array if not provided. Always pass your testcase's actual `tile_array` so the per-tile memory map matches your mesh layout.
 
 <div style="display: flex; justify-content: space-between;">
-  <a href="{{ '/docs/info' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-left-long"></i> Go back</a>
-  <a href="{{ '/docs/c-functions' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-right-long"></i> Continue</a>
+  <a href="{{ '/docs/using-mosaic/tutorial' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-left-long"></i> Go back</a>
+  <a href="{{ '/docs/using-mosaic/c-functions' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-right-long"></i> Continue</a>
 </div>

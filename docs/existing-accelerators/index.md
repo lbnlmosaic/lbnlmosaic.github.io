@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Existing Accelerators
-parent: Info
-nav_order: 3
+parent: Documentation
+nav_order: 4
 has_children: true
 ---
 # Existing Accelerators - WORK IN PROGRESS
@@ -10,7 +10,7 @@ has_children: true
 ## Accelerator Tiles
 
 | Tile | Type | Notes |
-|---|---|---|
+| --- | --- | --- |
 | [ASA](existing-accelerators/asa) | Key/data associative accelerator | NoC glue is in-repo; the ASA compute core itself is an external black box |
 | [Cache](existing-accelerators/cache) | Direct-mapped, write-back DRAM cache | Backs the mesh's shared-memory (`mPut`/`mGet`/`mLoad`/`mStore`) address space |
 | [FFT](existing-accelerators/fft) | Fast Fourier Transform | Chisel-generated, single-precision floating point, multiple size/width configs |
@@ -23,7 +23,7 @@ has_children: true
 A few pages in this section document **testcases** rather than standalone accelerator hardware — they combine or stress-test the tiles above:
 
 | Testcase | Demonstrates |
-|---|---|
+| --- | --- |
 | [SCF](existing-accelerators/scf) | Combined FFT + TSQR pipeline across a 3x3 mesh |
 | [Sweep](existing-accelerators/sweep) | FP adder tile inside a larger 8x8 mesh |
 | [Demo](existing-accelerators/demo) | Software-only asynchronous triangular solver using the cache tile |
