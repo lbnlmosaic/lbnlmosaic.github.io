@@ -5,6 +5,7 @@ parent: Using MoSAIC
 nav_order: 2
 ---
 # Tutorial
+*By: Patricia Gonzalez Guerrero*
 
 Let’s generate a small system with four tiles. All the tiles are equal and have a RISCV processor with an ISA extension for message queues (qISA). To generate this system we will:
 

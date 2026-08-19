@@ -5,6 +5,7 @@ parent: Using MoSAIC
 nav_order: 5
 ---
 # Adding New Accelerators
+*By: Patricia Gonzalez Guerrero*
 
 In the tutorial document there are two dummy accelerators (`acc1`, `acc2`) located in `doc/tutorial_files/acc1(2)_tile`.
 
