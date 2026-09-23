@@ -32,9 +32,9 @@ permalink: /
 
 <div class="card-grid">
   <a href="https://lbnlcomputerarch.github.io/docs/" class="site-card" target="_blank">🗂️<div class="card-title">Access our Resources</div><p> Guides on connecting to our servers via SSH, using a remote graphical desktop via VNC or XRDP, and others.</p></a>
-  <a href="/docs/dependencies" class="site-card" target="_blank">📦<div class="card-title">Dependencies</div><p>Not using our servers? Find out what tools you need!</p></a>
-  <a href="/docs/getting-started" class="site-card" target="_blank">🚀<div class="card-title">Getting Started</div><p>Use MoSAIC!</p></a>
-  <a href="/people" class="site-card" target="_blank">🔎<div class="card-title">About Us</div><p>Meet the people behind MoSAIC!</p></a>
+  <a href="{{ '/docs/dependencies' | relative_url }}" class="site-card">📦<div class="card-title">Dependencies</div><p>Not using our servers? Find out what tools you need!</p></a>
+  <a href="{{ '/docs/getting-started' | relative_url }}" class="site-card">🚀<div class="card-title">Getting Started</div><p>Use MoSAIC!</p></a>
+  <a href="{{ '/people' | relative_url }}" class="site-card">🔎<div class="card-title">About Us</div><p>Meet the people behind MoSAIC!</p></a>
 </div>
 
 {: .new-title }

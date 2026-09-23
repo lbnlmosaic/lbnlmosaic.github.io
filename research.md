@@ -7,7 +7,7 @@ permalink: /research/
 
 # Our Research
 ### Papers
-- [Accelerator integration in a tile-based SoC: lessons learned with a hardware floating point compression engine](https://dl.acm.org/doi/abs/10.1145/3624062.3624245)
+- X. Liu, P. Gonzalez-Guerrero, I. Peng, R. Minnich, and M. Gokhale, “Accelerator integration in a tile-based SoC: lessons learned with a hardware floating point compression engine,” *Proceedings of the SC ’23 Workshops of the International Conference on High Performance Computing, Network, Storage, and Analysis*, pp. 1662–1669, Nov. 2023, doi: [10.1145/3624062.3624245](https://dl.acm.org/doi/abs/10.1145/3624062.3624245){:target="_blank"}.
 
 <div style="display: flex; justify-content: space-between;">
   <a href="{{ '/docs/reg-io' | relative_url }}" class="btn btn-light mr-2"><i class="fa-solid fa-arrow-left-long"></i> Go back</a>
