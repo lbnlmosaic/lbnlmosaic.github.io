@@ -45,6 +45,7 @@ callouts:
 
 plugins:
   - jekyll-email-protect
+  - jekyll-sitemap
 
 mermaid:
   # Version of mermaid library
