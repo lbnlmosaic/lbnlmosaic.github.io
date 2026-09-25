@@ -8,8 +8,8 @@ url: "https://lbnlmosaic.github.io" # Your GitHub Pages URL
 # color_scheme: lbnl-dark   # LBNL Dark mode theme
 color_scheme: lbnl-light    # LBNL Light mode theme
 
-logo: "assets/logos/mosaiclogo.png"
-favicon_ico: "/assets/favicon/mosaiclogo.png"
+logo: "/assets/logos/mosaiclogo.png"
+favicon_ico: "/assets/favicon/favicon.ico"
 
 search_enabled: true
 heading_anchors: true

@@ -1,15 +1,15 @@
 {
-  "name": "Your Project",
-  "short_name": "Project",
+  "name": "Modular System for Acceleration Integration (MoSAI",
+  "short_name": "MoSAIC",
   "icons": [
     {
-      "src": "/web-app-manifest-192x192.png",
+      "src": "/assets/favicon/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/web-app-manifest-512x512.png",
+      "src": "/assets/favicon/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
